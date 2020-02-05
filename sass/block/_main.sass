@@ -1,0 +1,65 @@
+.main
+    position: relative
+    display: flex
+    width: 100%
+    margin-bottom: 85px
+    &_rate
+        display: flex
+        align-items: center
+        margin-top: 16px
+        &_text
+            margin-left: 9px
+    &-section
+        margin-bottom: 99px
+        width: 100%
+    &_block
+        min-width: 458px
+        width: 50%
+    &_title
+        +mason
+        padding: 10px 0
+    &_description
+        line-height: 21px
+        width: 458px
+        display: block
+    &_btn
+        position: relative
+        display: block
+        margin-top: 40px
+        width: 260px
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #9D2929
+        border-radius: 8px
+        font-weight: bold
+        letter-spacing: 0.5px
+        color: #ffffff
+    &_button
+        width: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        &_play
+            background: #9D2929
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            width: 100px
+            height: 100px
+            z-index: 5
+            &::before
+                position: absolute
+                background: #9D2929
+                opacity: 0.5
+                width: 132px
+                height: 132px
+                content: ''
+                border-radius: 50%
+                z-index: -1
+
+                
