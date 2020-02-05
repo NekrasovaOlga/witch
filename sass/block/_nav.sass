@@ -9,6 +9,10 @@
 .nav
     display: flex
     align-items: center
+    &_burger
+        display: none
+        &_span
+            display: none
     &_logo
         margin-right: 68px
     &_menu
@@ -17,3 +21,73 @@
 .social
     &_link
         margin-left: 21px
+
+
+@media screen and (max-width: 560px) and (min-width: 0px)
+    .nav
+        &_menu
+            display: none
+        &_burger
+            display: none
+            width: 250px
+            height: 282px
+            background: #000000
+            position: fixed
+            top: 0
+            right: 0
+            z-index: 99
+            transition: 0.5s
+            &_span
+                right: 0
+                height: 20px
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+                span
+                    width: 30px
+                    height: 2px
+                    background: #ffffff
+                    display: block
+                &_active
+                    z-index: 99999
+                    width: 24px
+                    height: 24px
+                    display: block
+                    position: fixed
+                    top: 38px
+                    right: 25px
+                    span
+                        display: none
+                    &::before
+                       content: ""
+                       position: absolute
+                       background: url('../img/close.png')
+                       width: 24px
+                       height: 24px
+                            
+            &_menu
+                display: flex
+                flex-direction: column
+                position: relative
+                align-items: center
+                height: 65px
+                width: 65px
+                margin: 0 auto
+                justify-content: space-between
+                margin-top: 22px
+
+            &_social
+                padding-top: 100px
+                align-items: center
+                justify-content: center
+                display: flex
+                width: 94px
+                margin: 0 auto
+                justify-content: space-between
+    .social_link
+        margin-left: 0
+    .nav_menu_link
+        margin-right: 0
+    .social
+        display: none
+           

@@ -11,16 +11,15 @@
             margin-left: 9px
     &-section
         margin-bottom: 99px
-        width: 100%
     &_block
-        min-width: 458px
+        max-width: 458px
         width: 50%
     &_title
         +mason
         padding: 10px 0
     &_description
         line-height: 21px
-        width: 458px
+        max-width: 458px
         display: block
     &_btn
         position: relative
@@ -63,3 +62,16 @@
                 z-index: -1
 
                 
+@media screen and (max-width: 690px) and (min-width: 0px)
+    .main
+        &_block
+            width: 100%
+            position: relative
+        &_button
+            display: none
+        
+
+@media screen and (max-width: 358px) and (min-width: 0px)
+    .main
+        &_title
+            font-size: 4em
