@@ -7,8 +7,10 @@
         display: flex
         align-items: center
         margin-top: 16px
+        animation-delay: 0.2s
         &_text
             margin-left: 9px
+            animation-delay: 0.4s
     &-section
         margin-bottom: 99px
     &_block
@@ -17,10 +19,12 @@
     &_title
         +mason
         padding: 10px 0
+        animation-delay: 0.6s
     &_description
         line-height: 21px
         max-width: 458px
         display: block
+        animation-delay: 0.8s
     &_btn
         position: relative
         display: block
@@ -35,6 +39,7 @@
         font-weight: bold
         letter-spacing: 0.5px
         color: #ffffff
+        animation-delay: 1.22s
     &_button
         width: 50%
         display: flex
@@ -60,6 +65,7 @@
                 content: ''
                 border-radius: 50%
                 z-index: -1
+                animation: pulse 0.9s ease-in-out 1.5s infinite
 
                 
 @media screen and (max-width: 690px) and (min-width: 0px)
@@ -70,7 +76,9 @@
         &_button
             display: none
         
-
+@media screen and (max-width: 565px)
+    .main
+        padding-top: 256px
 @media screen and (max-width: 358px) and (min-width: 0px)
     .main
         &_title

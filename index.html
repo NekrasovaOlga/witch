@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <div class="navigation contain">
+        <span class="nav_burger" id="burger"></span>
+        <div class="navigation contain" id="navigation">
             <div class="nav">
                 <div class="nav_logo"><img src="./img/logo.png" alt=""></div>
                 <nav class="nav_menu">
@@ -26,51 +30,37 @@
                 <a href="#" class="social_link social_link_instagram"><img src="./img/instagram.svg" alt=""></a>
                 <a href="#" class="social_link social_link_facebook"><img src="./img/facebook.svg" alt=""></a>
             </div>
-            <div id="menu" class="nav_burger_span ">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-            <div class="nav_burger" id="burger">
-                
-                <div class="nav_burger_social">
-                    <a href="#" class="social_link social_link_twitter"><img src="./img/twitter.svg" alt=""></a>
-                    <a href="#" class="social_link social_link_instagram"><img src="./img/instagram.svg" alt=""></a>
-                    <a href="#" class="social_link social_link_facebook"><img src="./img/facebook.svg" alt=""></a>
-                </div>
-                <nav class="nav_burger_menu">
-                    <a href="#" hrer="#" class="nav_menu_link">Описание </a>
-                    <a href="#" hrer="#" class="nav_menu_link">Трейлер</a>
-                    <a href="#" hrer="#" class="nav_menu_link">Отзывы</a>
-                </nav>
-            </div>
+           
             <!-- /.nav_burger -->
         </div>
         <!-- /.navigation -->
     </header>
     <!-- /.header -->
 
-    <main class="main-section contain">
-        <div class="main ">
-            <div class="main_block">
-                <p class="main_year">2019, фэнтези</p>
-            <div class="main_rate">
-                <img src="./img/rating-stars.png" alt="">
-                <span class="main_rate_text">7/10</span>
+   
+    <main class="main-section">
+        <div class="hero   contain">
+            <div class="main">
+                <div class="main_block">
+                    <p class="main_year   animated fadeInRight">2019, фэнтези</p>
+                <div class="main_rate   animated fadeInRight">
+                    <img src="./img/rating-stars.png" alt="">
+                    <span class="main_rate_text">7/10</span>
+                </div>
+                <!-- /.main_rate -->
+    
+                <h1 class="main_title   animated fadeInRight">Ведьмак </h1>
+                <span class="main_description animated fadeInRight">
+                    Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. 
+                </span> <!-- /.main_description -->
+                <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="main_btn animated fadeInRight">Смотреть трейлер</a>
+                </div>
+                <div class="main_button">
+                    <a  data-fancybox  href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="main_button_play animated"><img src="./img/Vector.svg" alt=""></a>
+                </div>
             </div>
-            <!-- /.main_rate -->
-
-            <h1 class="main_title">Ведьмак </h1>
-            <span class="main_description">
-                Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. 
-            </span> <!-- /.main_description -->
-            <button class="main_btn">Смотреть онлайн</button>
-            </div>
-            <div class="main_button">
-                <button class="main_button_play"><img src="./img/Vector.svg" alt=""></button>
-            </div>
-        </div>
-   <div class="slider">
+            <div class="slider   animated fadeInRight">
+                
     <div class="swiper-container ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -122,10 +112,13 @@
             
             </div>  
         </div>
-    <button class="slider_button"><img src="./img/arrow.svg" alt=""></button>
-    <div class="swiper-pagination"></div>
-   </div>
+        <button class="slider_button"><img src="./img/arrow.svg" alt=""></button>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+   
     </main>
+
 
     <footer class="footer-section">
         <div class="footer contain">
@@ -138,8 +131,10 @@
         </div>
         <!-- /.footer -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script>
     menu()
     </script>

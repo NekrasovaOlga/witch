@@ -20,16 +20,18 @@ var mySwiper = new Swiper ('.swiper-container', {
 
 
 function menu(){
-    var btn = document.getElementById("menu");
+
+
+    var btn = document.getElementById("navigation");
     var burger = document.getElementById("burger");
-    btn.onclick = function(){
-        btn.classList.toggle('nav_burger_span_active');
-        if( btn.classList.contains('nav_burger_span_active')){
-          burger.style.display = "block";  
+    burger.onclick = function(){
+        burger.classList.toggle('active');
+        if( burger.classList.contains('active')){
+            btn.style.opacity = "1";  
         }
         else
         {
-            burger.style.display = "none";  
+            btn.style.opacity = "0";  
         }
         
     }
